@@ -11,6 +11,7 @@ element: class="fragment" data-fragment-index="1"
 ## Despliegue de aplicaciones web
 ---
 ![Despliegue de aplicaciones web](http://jamj2000.github.io/despliegueaplicacionesweb/despliegueaplicacionesweb.png)
+
 <small> 2018-19 - IES Luis Vélez de Guevara - Écija - Spain </small>
 
 
@@ -29,7 +30,7 @@ element: class="fragment" data-fragment-index="1"
 
 <!--- Note: Nota a pie de página. -->
 
-
+---
 
 ## Introducción
 
@@ -41,6 +42,7 @@ element: class="fragment" data-fragment-index="1"
 - Instalar y configurar de forma básica servidores Web.
 - Realizar pruebas de funcionamiento de los servidores web.
 
+---
 
 ### ¿Qué es Internet?
 
@@ -54,18 +56,20 @@ element: class="fragment" data-fragment-index="1"
 - Cada protocolo permite ofrecer un **servicio** o parte de él.
 - Diseño inicial **cliente/servidor**. 
 
+---
 
 ### Protocolos de Internet
 
 - **HTTP** (World Wide Web)
 - **FTP** (Transferencia de archivos)
 - **DNS** (Resolución de nombres)
-- **SMTP**, **POP**, **IMAP** (Correo eléctrónico)
+- **SMTP**(envío), **POP**(recibo), **IMAP**(recibo) (Correo eléctrónico)
 - **RIP**, **OSPF**, **BGP** (Enrutamiento de paquetes)
 - **Telnet**, **SSH** (Conexión remota por terminal)
 - **VNC**, **RDP** (Conexión remota gráfica)
 - ... muchos más
 
+---
 
 ###  Localizador Uniforme de Recursos (URL)
 
@@ -79,7 +83,7 @@ element: class="fragment" data-fragment-index="1"
   ftp://archivos.example.com/descargas/ubuntu.iso
   https://pepe:1234@musica.com:1443/rock/descargar.php?album=37&formato=mp3
   ```
-
+---
 
 
 ## El protocolo HTTP
@@ -95,11 +99,13 @@ element: class="fragment" data-fragment-index="1"
 - Existe la versión segura, que es HTTPS, en la que el servidor atiende en el **puerto 443**.  
 - Es es protocolo sin estado: no guarda ninguna información sobre conexiones anteriores.
 
+---
 
 ### Transacción HTTP
 
 ![Transacción HTTP](assets/transaccion-http.png)
 
+---
 
 ### Ejemplo de petición
 
@@ -107,7 +113,7 @@ element: class="fragment" data-fragment-index="1"
 GET /index.html HTTP/1.1
 Host: www.example.com
 ```
-
+---
 
 ### Ejemplo de respuesta
 
@@ -129,7 +135,7 @@ Connection: close
 </body>
 </html>
 ``` 
-
+---
 
 ### Métodos HTTP
 #### Métodos básicos
@@ -139,6 +145,7 @@ Connection: close
 - **PUT**
 - **DELETE**
 
+---
 
 ### Métodos HTTP
 #### Otros métodos
@@ -151,6 +158,7 @@ Connection: close
 
 https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto
 
+---
 
 ### Códigos de respuesta HTTP
 
@@ -162,6 +170,7 @@ https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto
 
 [Lista de códigos de estado (en inglés)](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 
+---
 
 ### Cabeceras de la petición
 
@@ -171,6 +180,7 @@ Accept	        | Accept: text/html	            | Tipos de contenido que se admit
 Accept-Charset	| Accept-Charset: utf-8	        | Juegos de caracteres admitidos.
 Accept-Encoding	| Accept-Encoding: gzip, deflate| Lista de codificaciones (compresión) admitidas.
 
+---
 
 ### Cabeceras de la petición
 
@@ -181,6 +191,7 @@ Host            | Host: en.wikipedia.org:8080   | Nombre de dominio del servidor
 User-Agent      |User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:12.0) | Agente del usuario.
 ...             | ...                           | ...
 
+---
 
 ### Cabeceras de la respuesta
 
@@ -190,6 +201,7 @@ Content-Encoding| Content-Encoding: gzip        | Codificiación de los datos en
 Content-Language| Content-Language: es          | Idioma en el que está el contenido.
 Content-Type    | Content-Type: text/html; charset=utf-8 | Tipo MIME del contenido.
 
+---
 
 ### Cabeceras de la respuesta
 
@@ -199,6 +211,7 @@ Server          | Server: Apache/2.4.1 (Unix)   | Servidor web.
 Status          | Status: 200 OK                | Código de estado.
 ...             | ...                           | ...
 
+---
 
 ### Tipos MIME 
 **Multipurpose Internet Mail Extension**
@@ -213,6 +226,7 @@ application/json      | Datos en formato JSON
 image/jpeg            | Imagen en formato JPEG
 image/png             | Imagen en formato PNG
 
+---
 
 ### Tipos MIME 
 **Multipurpose Internet Mail Extension**
@@ -225,12 +239,13 @@ audio/ogg             | Audio en formato OGG Vorbis
 video/H264            | Video con codificación H.264
 ...                   | ...
 
+---
 
 ### Petición HTTP
 
 ![Petición HTTP](assets/peticion-http.png)
 
-
+---
 
 ## Arquitecturas web
 
